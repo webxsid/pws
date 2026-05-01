@@ -1,0 +1,44 @@
+<section class="hero">
+  <div class="panel panel-accent">
+    <p class="label">Endpoint</p>
+    <strong>{{ snapshot.apiBaseUrl }}</strong>
+    <p>The Angular console is wired to the manager API client package.</p>
+  </div>
+
+  <div class="grid">
+    <article class="panel metric">
+      <span>Apps</span>
+      <strong>{{ snapshot.apps.length }}</strong>
+    </article>
+
+    <article class="panel metric">
+      <span>Connected Nodes</span>
+      <strong>{{ snapshot.nodesConnected }}</strong>
+    </article>
+
+    <article class="panel metric">
+      <span>Running Services</span>
+      <strong>{{ snapshot.servicesRunning }}</strong>
+    </article>
+  </div>
+</section>
+
+<section class="detail-grid">
+  <article class="panel">
+    <p class="label">Current Scope</p>
+    <h2>Operator-first manager UI</h2>
+    <p>
+      This scaffold keeps the web layer separate from the manager backend while staying close to the
+      control-plane model from the project notes.
+    </p>
+  </article>
+
+  <article class="panel">
+    <p class="label">Why Angular Here</p>
+    <h2>Structured by default</h2>
+    <p>
+      Services, routing, and dependency injection are already in place, so the console can grow into a
+      larger operational surface without rewiring the app later.
+    </p>
+  </article>
+</section>

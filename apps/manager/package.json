@@ -1,0 +1,21 @@
+{
+  "name": "@pws/manager",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig.json",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@pws/config": "workspace:*",
+    "@pws/domain": "workspace:*",
+    "@pws/logging": "workspace:*",
+    "@pws/protocol": "workspace:*",
+    "@pws/runtime-core": "workspace:*",
+    "@pws/scheduler": "workspace:*"
+  }
+}

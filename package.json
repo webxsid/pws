@@ -1,0 +1,36 @@
+{
+  "name": "pws",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Private Web Services monorepo",
+  "packageManager": "pnpm@10.30.3",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.9",
+    "@angular/cli": "^21.2.9",
+    "@angular/common": "^21.2.0",
+    "@angular/compiler": "^21.2.0",
+    "@angular/compiler-cli": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular-devkit/build-angular": "^21.2.9",
+    "@angular/forms": "^21.2.0",
+    "@angular/platform-browser": "^21.2.0",
+    "@angular/router": "^21.2.0",
+    "@types/node": "^22.15.29",
+    "@eslint/js": "^9.26.0",
+    "@pws/domain": "workspace:*",
+    "@pws/sdk": "workspace:*",
+    "eslint": "^9.26.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "turbo": "^2.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0"
+  }
+}
