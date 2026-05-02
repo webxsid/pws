@@ -1,9 +1,14 @@
+# Dependency directories
 node_modules
+
+# Build output directories
 dist
 .turbo
 coverage
 *.tsbuildinfo
 .angular
+
+# IDE and editor files
 apps/**/src/*.js
 apps/**/src/*.js.map
 apps/**/src/*.d.ts
@@ -12,3 +17,12 @@ packages/**/src/*.js
 packages/**/src/*.js.map
 packages/**/src/*.d.ts
 packages/**/src/*.d.ts.map
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local

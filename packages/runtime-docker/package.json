@@ -14,6 +14,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@pws/runtime-core": "workspace:*"
+    "@pws/runtime-core": "workspace:*",
+    "@types/dockerode": "^4.0.1",
+    "dockerode": "^5.0.0"
   }
 }

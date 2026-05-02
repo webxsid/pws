@@ -2,7 +2,7 @@ import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 
 const ignores = {
-  ignores: ["dist/**", "coverage/**", ".turbo/**"]
+  ignores: ["dist/**", "coverage/**", ".turbo/**", "**/eslint.config.js"]
 };
 
 export default tseslint.config(

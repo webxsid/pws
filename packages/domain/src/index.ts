@@ -2,6 +2,21 @@ export type DeploymentStatus = "BUILDING" | "DEPLOYING" | "RUNNING" | "FAILED";
 export type InstanceStatus = "STARTING" | "RUNNING" | "STOPPED";
 export type IngressType = "cloudflare" | "ngrok" | "custom";
 
+export interface ResourceLimits {
+  cpuLimit?: number;
+  memoryLimitMb?: number;
+}
+
+export interface RuntimeCapability {
+  name: string;
+  version: string;
+}
+
+export interface AgentCapabilities {
+  supportedRuntimes: RuntimeCapability[];
+  supportedArchitectures: string[];
+}
+
 export interface App {
   id: string;
   name: string;

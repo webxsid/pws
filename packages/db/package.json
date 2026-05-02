@@ -1,22 +1,24 @@
 {
-  "name": "@pws/manager",
+  "name": "@pws/db",
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -w -p tsconfig.json",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "migrate": "node dist/migrate.js",
+    "migrate:status": "node dist/migrate.js --status"
   },
   "dependencies": {
     "@pws/config": "workspace:*",
-    "@pws/db": "workspace:*",
-    "@pws/domain": "workspace:*",
     "@pws/logging": "workspace:*",
-    "@pws/protocol": "workspace:*",
-    "@pws/runtime-core": "workspace:*",
-    "@pws/scheduler": "workspace:*"
+    "dotenv": "^16.4.7",
+    "pg": "^8.14.1"
   }
 }
